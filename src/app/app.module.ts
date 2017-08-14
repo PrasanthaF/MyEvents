@@ -28,14 +28,15 @@ import { EventsListResolverService } from "./events/events-list-resolver.service
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [EventService, ToastrService, EventRouteActivatorService, EventsListResolverService,
-  {
-    provide:'canDeactivateCreateEvent', useValue:checkDirtyState
-  }
+  providers: [EventService, ToastrService, EventRouteActivatorService, EventsListResolverService
+  //   ,
+  // {
+  //   provide:'canDeactivateCreateEvent', useValue:checkDirtyState
+  // }
 ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
 
 function checkDirtyState(component: CreateEventComponent)
 {
