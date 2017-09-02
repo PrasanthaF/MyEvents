@@ -36,7 +36,7 @@ import { CreateSessionComponent } from './events/create-session/create-session.c
     FormsModule,
     ReactiveFormsModule,
     AppRoutingModule,
-    UserModule
+    UserModule    
   ],
   providers: [EventService, ToastrService, EventRouteActivatorService, EventsListResolverService, AuthService
     // EventRouteDeactivatorService
